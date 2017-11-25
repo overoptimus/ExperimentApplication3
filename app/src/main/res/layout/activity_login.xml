@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimg">
+
+
+    <!--<include layout="@layout/title" />-->
+
+
+    <TextView
+        android:textColor="@color/origin"
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="@string/login_title"
+        android:textSize="20pt" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="96dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/origin"
+                android:textSize="12pt"
+                android:text="@string/login"
+                />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textColor="@color/origin"
+                android:textSize="12pt"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center|bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:textColor="@color/origin"
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textSize="12pt"
+            android:layout_marginRight="30dp"/>
+
+        <Button
+            android:textColor="@color/origin"
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12pt"
+            android:text="注册" />
+
+    </LinearLayout>
+
+</LinearLayout>
